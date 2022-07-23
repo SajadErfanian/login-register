@@ -103,7 +103,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(["userMobile", "otpRules"]),
+    ...mapState(["userMobile"]),
   },
   methods: {
     clear() {

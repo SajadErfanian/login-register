@@ -81,7 +81,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(["userMobile", "rules"]),
+    ...mapState(["userMobile"]),
   },
 
   methods: {

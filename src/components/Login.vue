@@ -101,18 +101,18 @@ export default {
       phoneNemberFild: true,
       ForgotPass: "ForgotPass",
       disabled: true,
+      rules: [
+        (value) => !!value || "Required.",
+        (value) => (value && value.length == 11) || "11 characters",
+      ],
       passRules: {
         required: (value) => !!value || "Required.",
         min: (v) => v.length >= 8 || "Min 8 characters",
       },
-      otpRules: [
-        (value) => !!value || "Required.",
-        (value) => (value && value.length == 5) || "5 characters",
-      ],
     };
   },
   computed: {
-    ...mapState(["rules"]),
+    ...mapState(["userMobile"]),
   },
   watch: {
     // for enable phone number btn
