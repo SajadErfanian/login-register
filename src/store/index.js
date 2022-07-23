@@ -6,10 +6,6 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     userMobile: "",
-    rules: [
-      (value) => !!value || "Required.",
-      (value) => (value && value.length == 11) || "11 characters",
-    ],
   },
   getters: {
 
